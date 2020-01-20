@@ -1,0 +1,12 @@
+Source: ros-eloquent-velocity-smoother
+Section: misc
+Priority: optional
+Maintainer: Jihoon Lee <jihoonl@yujinrobot.com>
+Build-Depends: debhelper (>= 9.0.0), ros-eloquent-ament-cmake-ros, ros-eloquent-ecl-build, ros-eloquent-geometry-msgs, ros-eloquent-nav-msgs, ros-eloquent-rcl-interfaces, ros-eloquent-rclcpp, ros-eloquent-rclcpp-components, ros-eloquent-ros-workspace
+Homepage: https://index.ros.org/v/velocity_smoother/github-kobuki-base-velocity_smoother
+Standards-Version: 3.9.2
+
+Package: ros-eloquent-velocity-smoother
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-eloquent-geometry-msgs, ros-eloquent-nav-msgs, ros-eloquent-rcl-interfaces, ros-eloquent-rclcpp, ros-eloquent-rclcpp-components, ros-eloquent-ros-workspace
+Description: Bound incoming velocity messages according to robot velocity and acceleration limits.
